@@ -1,0 +1,19 @@
+python main.py --model ACE --data SpamBase --lr_E 1e-5 --epochs 600 --alpha 0.05
+
+python main.py --model ACE --data mnist --lr_E 1e-5 --epochs 750 --alpha 0.05
+
+python main.py --model ACE --data satimage-2 --lr_E 1e-5 --epochs 1300 --alpha 0.05
+
+python main.py --model ACE --data satellite --lr_E 1e-5 --epochs 600 --alpha 0.05
+
+python main.py --model ACE --data Arrhythmia --lr_E 1e-5 --epochs 200 --alpha 0.05
+
+python main.py --model GCN-UOD --data SpamBase --lr_E 1e-4 --lr_G 1e-4 --epoch 500 --drop_one
+
+python main.py --model GCN-UOD --data mnist --lr_E 1e-4 --lr_G 1e-4 --epochs 75 --drop_one
+
+python main.py --model GCN-UOD --data satimage-2 --lr_E 1e-4 --lr_G 1e-4 --epoch 500 --drop_one
+
+python main.py --model GCN-UOD --data satellite --lr_E 1e-4 --lr_G 1e-4 --epoch 250 --drop_one
+
+python main.py --model GCN-UOD --data Arrhythmia --lr_E 1e-4 --lr_G 1e-4 --epoch 80 --drop_one
