@@ -9,5 +9,6 @@ The code for our paper "GCN-UOD: Generative Cooperative Network for Unsupervised
 - CUDA==12.1
 - numpy==1.26.0
 - pandas==2.1.1
+- matplotlib==3.8.0
 - scipy==1.11.3
 - sklearn==1.3.2
