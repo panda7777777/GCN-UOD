@@ -26,7 +26,7 @@ We provide five datasets in `./data`, as referenced in our paper. Parameters for
 
 2. Copy the weights of ACE to `./weights`:
    ```
-   cp path/to/ACE_weights.pth ./weights/ACE_Spambase.pt
+   cp path/to/weights ./weights/ACE_Spambase.pt
    ```
 
 3. Train GCN-UOD to describle a more resonable boundary:
