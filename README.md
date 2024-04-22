@@ -1,6 +1,6 @@
 # GCN-UOD
 
-The code for our paper "GCN-UOD: Generative Cooperative Network for Unsupervised Outlier Detection".
+The code for our paper "Generative Cooperative Network for Unsupervised Outlier Detection".
 
 ## Environment Setup
 
