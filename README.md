@@ -17,7 +17,7 @@ Our project is implemented using the PyTorch framework. The following are the ne
 
 ## Usage
 
-We provide five datasets in `./data`, as referenced in our paper. Parameters for these datasets are detailed in `parameters.txt`. Below is an example illustrating the training process for our models (ACE & GCN-UOD) on the SpamBase dataset. By default, the results, including model weights, AUC scores, inference times, and training history, are stored in `./results`.
+We provide 13 datasets in `./data`, as referenced in our paper. Parameters for these datasets are detailed in `parameters.txt`. Below is an example illustrating the training process for our models (ACE & GCN-UOD) on the SpamBase dataset. By default, the results, including model weights, AUC scores, inference times, and training history, are stored in `./results`.
 
 1. Train ACE to describle a preliminary boundary that separates significant outliers from normal data:
    ```
