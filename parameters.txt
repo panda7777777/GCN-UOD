@@ -24,7 +24,6 @@ python main.py --model ACE --data Cover --lr_E 1e-3 --epochs 17 --alpha 0.05
 
 python main.py --model ACE --data OptDigits --lr_E 1e-4 --epochs 500 --alpha 0.05
 
-
 ------------------------------------------------------------------------------------------------------------------
 
 python main.py --model GCN-UOD --data SpamBase --lr_E 1e-4 --lr_G 1e-4 --epoch 500 --drop_one
