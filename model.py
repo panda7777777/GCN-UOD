@@ -11,7 +11,8 @@ class Estimator(nn.Module):
             nn.Linear(self.latent_size, self.latent_size // 2),
             nn.ReLU(),
             nn.Linear(self.latent_size // 2, self.latent_size // 4),
-            nn.ReLU()
+            nn.ReLU(),
+            nn.Dropout1d(p=0.5)
         )
 
         self.decoder = nn.Sequential(
@@ -57,12 +58,13 @@ class Generator(nn.Module):
     def __init__(self, ngpu, latent_size):
         super(Generator, self).__init__()
         self.ngpu = ngpu
+        self.latent_size = latent_size
 
         # Main sequence of layers
         self.main = nn.Sequential(
-            nn.Linear(latent_size, 2 * latent_size, bias=True),
+            nn.Linear(self.latent_size, 2 * self.latent_size, bias=True),
             nn.ReLU(),
-            nn.Linear(2 * latent_size, latent_size, bias=True),
+            nn.Linear(2 * self.latent_size, self.latent_size, bias=True),
             nn.Sigmoid()
         )
 

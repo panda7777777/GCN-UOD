@@ -42,6 +42,10 @@ def load_data(datafile_name):
     X = torch.tensor(X, dtype=torch.float32)
     Y = torch.tensor(Y, dtype=torch.long)
 
+    min_value, _ = torch.min(X, dim=0)
+    max_value, _ = torch.max(X, dim=0)
+    X = (X - min_value + 1e-8) / (max_value - min_value + 1e-8)
+
     return X, Y
 
 

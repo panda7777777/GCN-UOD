@@ -1,19 +1,54 @@
 python main.py --model ACE --data SpamBase --lr_E 1e-5 --epochs 600 --alpha 0.05
 
-python main.py --model ACE --data mnist --lr_E 1e-5 --epochs 750 --alpha 0.05
+python main.py --model ACE --data MNIST --lr_E 1e-5 --epochs 350 --alpha 0.05
 
-python main.py --model ACE --data satimage-2 --lr_E 1e-5 --epochs 1300 --alpha 0.05
+python main.py --model ACE --data Satimage-2 --lr_E 1e-5 --epochs 1300 --alpha 0.05
 
-python main.py --model ACE --data satellite --lr_E 1e-5 --epochs 600 --alpha 0.05
+python main.py --model ACE --data Satellite --lr_E 1e-5 --epochs 600 --alpha 0.05
 
 python main.py --model ACE --data Arrhythmia --lr_E 1e-5 --epochs 200 --alpha 0.05
 
+python main.py --model ACE --data WBC --lr_E 1e-4 --epochs 500 --alpha 0.05
+
+python main.py --model ACE --data Shuttle --lr_E 1e-4 --epochs 500 --alpha 0.05
+
+python main.py --model ACE --data Glass --lr_E 1e-4 --epochs 1000 --alpha 0.05
+
+python main.py --model ACE --data Wine --lr_E 1e-4 --epochs 1000 --alpha 0.05
+
+python main.py --model ACE --data Letter --lr_E 1e-4 --epochs 250 --alpha 0.05
+
+python main.py --model ACE --data Musk --lr_E 1e-4 --epochs 200 --alpha 0.05
+
+python main.py --model ACE --data Cover --lr_E 1e-3 --epochs 17 --alpha 0.05
+
+python main.py --model ACE --data OptDigits --lr_E 1e-4 --epochs 500 --alpha 0.05
+
+
+------------------------------------------------------------------------------------------------------------------
+
 python main.py --model GCN-UOD --data SpamBase --lr_E 1e-4 --lr_G 1e-4 --epoch 500 --drop_one
 
-python main.py --model GCN-UOD --data mnist --lr_E 1e-4 --lr_G 1e-4 --epochs 75 --drop_one
+python main.py --model GCN-UOD --data MNIST --lr_E 1e-4 --lr_G 1e-4 --epochs 30 --drop_one
 
-python main.py --model GCN-UOD --data satimage-2 --lr_E 1e-4 --lr_G 1e-4 --epoch 500 --drop_one
+python main.py --model GCN-UOD --data Satimage-2 --lr_E 1e-4 --lr_G 1e-4 --epoch 290 --drop_one
 
-python main.py --model GCN-UOD --data satellite --lr_E 1e-4 --lr_G 1e-4 --epoch 250 --drop_one
+python main.py --model GCN-UOD --data satellite --lr_E 1e-4 --lr_G 1e-4 --epoch 150 --drop_one
 
-python main.py --model GCN-UOD --data Arrhythmia --lr_E 1e-4 --lr_G 1e-4 --epoch 80 --drop_one
+python main.py --model GCN-UOD --data Arrhythmia --lr_E 1e-4 --lr_G 1e-4 --epoch 60 --drop_one
+
+python main.py --model GCN-UOD --data WBC --lr_E 1e-3 --lr_G 1e-3 --epoch 500 --drop_one
+
+python main.py --model GCN-UOD --data Shuttle --lr_E 1e-3 --lr_G 1e-3 --epoch 150 --drop_one
+
+python main.py --model GCN-UOD --data Glass --lr_E 1e-3 --lr_G 1e-3 --epoch 500 --drop_one
+
+python main.py --model GCN-UOD --data Wine --lr_E 1e-3 --lr_G 1e-3 --epoch 100 --drop_one
+
+python main.py --model GCN-UOD --data Letter --lr_E 1e-3 --lr_G 1e-3 --epoch 100 --drop_one
+
+python main.py --model GCN-UOD --data Musk --lr_E 1e-4 --lr_G 1e-4 --epoch 100 --drop_one
+
+python main.py --model GCN-UOD --data Cover --lr_E 1e-2 --lr_G 1e-2 --epoch 5 --drop_one
+
+python main.py --model GCN-UOD --data OptDigits --lr_E 1e-3 --lr_G 1e-3 --epoch 20 --drop_one

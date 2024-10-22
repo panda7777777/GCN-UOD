@@ -63,6 +63,8 @@ def main():
 
     if args.model == 'ACE':
         batch_size = X.shape[0] // 12
+        if args.data == 'Shuttle':
+            batch_size = X.shape[0] // 10
     else:
         batch_size = X.shape[0]
 

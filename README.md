@@ -31,5 +31,5 @@ We provide five datasets in `./data`, as referenced in our paper. Parameters for
 
 3. Train GCN-UOD to describle a more resonable boundary:
    ```
-   python main.py --model GCN-UOD --data SpamBase --lr_E 1e-4 --lr_G 1e-4 --epochs 500 --drop_out
+   python main.py --model GCN-UOD --data SpamBase --lr_E 1e-4 --lr_G 1e-4 --epochs 500 --drop_one
    ```
